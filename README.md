@@ -1,99 +1,144 @@
 # 🚀 TalentScout AI Hiring Assistant
 
-## Overview
+## Project Overview
 
-TalentScout is an innovative AI-powered hiring assistant that streamlines the initial candidate screening process. Leveraging Google's Generative AI, this Streamlit application provides an intelligent, privacy-focused approach to collecting candidate information and conducting technical assessments.
+TalentScout is an intelligent AI-powered hiring assistant designed to streamline the initial candidate screening process. Leveraging Google's Gemini AI, the application provides an automated, privacy-focused approach to collecting candidate information and conducting technical assessments.
 
-<img width="1432" alt="Screenshot 2025-03-27 at 5 02 27 PM" src="https://github.com/user-attachments/assets/08269610-8efc-4154-99a1-9d56d043a8a7" />
+## Key Capabilities
 
+- Automated candidate information collection
+- Dynamic, tech-stack specific technical interview question generation
+- Secure data anonymization and privacy protection
+- Adaptive conversational interface
+- Comprehensive candidate profiling
 
-## 🌟 Key Features
+## Installation Instructions
 
-- **Intelligent Conversation Flow**: Guided interaction to collect candidate details
-- **Dynamic Technical Assessment**: Generates tech-stack specific interview questions
-- **Data Privacy**: Advanced anonymization and secure data handling
-- **Flexible Tech Stack Support**: Adapts to various programming languages, frameworks, and tools
-- **Modern UI/UX**: Sleek, responsive design with Lottie animations
-
-## 🛠 Technologies Used
-
-- Python
-- Streamlit
-- Google Generative AI (Gemini)
-- Data Privacy Techniques
-  - SHA-256 Hashing
-  - Secure Token Generation
-- Custom CSS Styling
-- Lottie Animations
-
-## 🔧 Prerequisites
+### Prerequisites
 
 - Python 3.8+
-- Google AI API Key
-- Required Python Packages:
-  - streamlit
-  - google-generativeai
-  - requests
-  - streamlit-lottie
+- Google Generative AI API Key
+- Pip package manager
 
-## 🚦 Installation
+### Step-by-Step Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Hiring-Assistan.git
-cd Hiring-Assistan
+git clone https://github.com/yourusername/Hiring-Assistant.git
+cd Hiring-Assistant
 ```
 
-2. Install dependencies:
+2. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+3. Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up Google AI API Key:
-- Replace `GOOGLE_API_KEY` in the script with your actual Google AI API key
-- Ensure you have API access from Google AI Studio
+4. Configure API Key:
+- Obtain a Google Generative AI API key from Google AI Studio
+- Replace `GOOGLE_API_KEY` in the script with your actual API key
 
-## 🏃 Running the Application
-
+5. Run the application:
 ```bash
-streamlit run main.py
+streamlit run app.py
 ```
 
-## 🔒 Privacy & Security
+## Usage Guide
 
-TalentScout prioritizes candidate data protection:
-- All sensitive information is hashed
-- Unique anonymized identifiers generated
-- Secure, timestamped JSON storage
-- Compliance with data privacy standards
+1. Launch the application
+2. Follow the conversational prompts to provide:
+   - Personal information
+   - Professional experience
+   - Technical skills
+3. Complete the technical assessment questions
+4. Receive a confirmation with an anonymized identifier
 
-## 📋 Conversation Flow
+## Technical Details
 
-1. Collect Personal Information
-   - Full Name
-   - Email
-   - Phone Number
-   - Years of Experience
-   - Desired Positions
-   - Current Location
-   - Tech Stack
+### Libraries and Frameworks
+- **Streamlit**: Web application framework
+- **Google Generative AI**: AI-powered question generation
+- **Hashlib**: Secure data hashing
+- **Secrets**: Secure token generation
+- **Datetime**: Timestamp management
 
-2. Generate Tech-Specific Questions
-   - Dynamically created based on candidate's technologies
-   - Assess practical knowledge
-   - Evaluate problem-solving skills
+### Architectural Decisions
 
-3. Technical Assessment
-   - 5 adaptive technical questions
-   - Captures candidate's depth of understanding
+#### Privacy-First Design
+- Implemented `DataPrivacyManager` to handle sensitive information
+- SHA-256 hashing for personal identifiers
+- Secure, anonymized data storage
+- Dynamic data anonymization techniques
 
+#### AI-Powered Question Generation
+- Tech stack-aware prompt engineering
+- Adaptive question difficulty
+- Comprehensive skill assessment approach
 
+### Model Details
+- **AI Model**: Google Gemini 2.0 Flash
+- **Prompt Generation Strategy**: Context-aware, technology-specific prompts
+- **Safety Settings**: Configured to prevent inappropriate content generation
 
-## 🎯 Future Roadmap
+## Prompt Design Strategy
 
+### Information Gathering Prompts
+- Structured, step-by-step conversational flow
+- Validation at each stage (email, phone, experience)
+- Clear, concise instructions for user input
+
+### Technical Question Generation
+1. Analyze candidate's declared tech stack
+2. Create context-aware prompts
+3. Generate questions testing:
+   - Theoretical understanding
+   - Practical application
+   - Problem-solving skills
+   - Conceptual depth
+
+### Example Prompt Structure
+```python
+prompt = f"""
+Generate technical questions for a candidate with: {tech_stack}
+
+Guidelines:
+1. Test practical understanding
+2. Avoid yes/no questions
+3. Focus on problem-solving
+"""
+```
+
+## Challenges & Solutions
+
+### 1. Dynamic Question Generation
+**Challenge**: Creating relevant, technology-specific questions
+**Solution**: 
+- Implemented tech stack categorization
+- Used AI to generate adaptive questions
+- Fallback mechanism for question generation
+
+### 2. Data Privacy
+**Challenge**: Protecting candidate information
+**Solution**:
+- Implemented anonymization techniques
+- Used secure hashing for sensitive data
+- Created unique, non-reversible identifiers
+
+### 3. Conversational Flow Management
+**Challenge**: Maintaining context across conversation stages
+**Solution**:
+- State machine approach in conversation management
+- Clear stage transitions
+- Error handling for unexpected inputs
+
+## Future Roadmap
 - [ ] Multi-language support
+- [ ] Advanced candidate scoring
+- [ ] ATS (Applicant Tracking System) integration
 - [ ] Enhanced AI assessment capabilities
-- [ ] Integration with ATS systems
-- [ ] Advanced analytics dashboard
-- [ ] Machine learning-based candidate scoring
 
