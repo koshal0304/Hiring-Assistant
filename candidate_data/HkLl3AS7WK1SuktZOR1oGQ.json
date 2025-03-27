@@ -1,0 +1,25 @@
+{
+  "id": "HkLl3AS7WK1SuktZOR1oGQ",
+  "full_name": "dfgvedf",
+  "email": "253f21f4111b5718fdb90f5437ef45ce94f17845762bf10d874bb08180d8880e",
+  "phone": "cda55667c03ecbf230cf17825f6ecb59cb75389547c9487474ac2c25868732c3",
+  "years_experience": 3,
+  "desired_positions": "cdsvwe",
+  "current_location": "vwefvwe",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions for a candidate proficient in Python, Django, React, PostgreSQL, and Docker, designed to assess practical understanding and problem-solving:",
+    "1.  **Django & PostgreSQL Data Integrity:**  Describe a scenario where a race condition could occur when multiple users are attempting to update the same record in your Django application (using PostgreSQL as the database). What are two different strategies you could implement to prevent data corruption in this situation, explaining the pros and cons of each approach? (e.g., optimistic locking, pessimistic locking, select_for_update)",
+    "2.  **React Component Optimization:** You have a complex React component that is re-rendering frequently, even when its props and state haven't changed. Describe your process for identifying the cause of these unnecessary re-renders. What tools and techniques would you use (e.g., React Profiler, `useMemo`, `useCallback`, `React.memo`) and in what order would you typically apply them? Explain how each addresses the root cause.",
+    "3.  **Docker Networking & Orchestration:**  You're deploying your Django application, a separate PostgreSQL database, and a React front-end application using Docker Compose. You want to ensure the applications can communicate with each other using named services (e.g., `db` for the database), but you also want to expose only the React front-end to the outside world.  Explain how you would configure the Docker Compose file to achieve this, focusing on networking aspects.  How would you expand this setup for a production environment and introduce a container orchestration tool like Kubernetes?",
+    "4.  **API Design & Django REST Framework:** You need to design a REST API endpoint in Django REST Framework that allows users to upload large files (e.g., images, videos) asynchronously. Describe how you would implement this, addressing considerations like:"
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T16:50:43.495429"
+}

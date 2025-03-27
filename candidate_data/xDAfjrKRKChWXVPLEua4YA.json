@@ -1,0 +1,25 @@
+{
+  "id": "xDAfjrKRKChWXVPLEua4YA",
+  "full_name": "koshal",
+  "email": "519aef5d7539f12c004e85827e2fdde7b0b7e92ed76941a3f93eb22cdab83b9f",
+  "phone": "7d6b173289b11959e9ea9cf61672cfce1dcdf436e38d338208cb1e4d4b02f45c",
+  "years_experience": 0,
+  "desired_positions": "python",
+  "current_location": "noiuda",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions for a candidate with experience in Python, Django, React, PostgreSQL, and Docker:",
+    "1.  **Django & PostgreSQL:**  Imagine you have a Django model, `Product`, with fields like `name` (CharField), `price` (DecimalField), and `category` (ForeignKey to a `Category` model). You need to write a Django view that efficiently retrieves the top 5 most expensive products for each category.  Describe your approach, paying close attention to optimizing the database query using techniques available in the Django ORM.  Discuss potential performance bottlenecks and how you might address them, including considerations for the number of categories and total number of products.",
+    "2.  **React & Performance:** You are building a React component that displays a list of 1000 items retrieved from an API. Each item has an image, a title, and a short description. Describe how you would optimize the rendering performance of this component. Consider techniques like virtualization, memoization, and code splitting.  Explain the trade-offs involved in each approach and when you might choose one over another. How would you measure the effectiveness of your optimizations?",
+    "3.  **Python & Concurrency:**  You have a Python script that needs to perform a large number of independent API calls.  Each call takes a significant amount of time.  Describe how you would use concurrency to improve the script's overall performance.  Explain the differences between using threads and asynchronous programming (asyncio) in this scenario, and which you would choose and why.  Include considerations for error handling and limiting the number of concurrent requests to avoid overwhelming the API.",
+    "4.  **Docker & Django:** You are Dockerizing a Django application that needs to connect to a PostgreSQL database also running in a Docker container.  Describe the steps you would take to ensure that the Django application can reliably connect to the database, even when the database container might take some time to initialize.  Explain how you would handle environment variables (like database credentials) securely in your Docker Compose setup."
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T13:00:32.705070"
+}

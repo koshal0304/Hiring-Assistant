@@ -1,0 +1,25 @@
+{
+  "id": "II7lh-9N9rAAH5Z-hPFzjQ",
+  "full_name": "koshal kumar",
+  "email": "2a308378bc69963faaa90001a498b308e7c9065ce8a3332c6ed1d58a9e432c97",
+  "phone": "3a9f9d10d5733f85c3c04c6772fa6dc85355763505e79161fa2e5d863b5423d6",
+  "years_experience": 0,
+  "desired_positions": "python",
+  "current_location": "noida",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 3 technical questions suitable for a candidate with experience in Python, Django, React, PostgreSQL, and Docker:",
+    "1.  **Scenario:** You're building a Django API endpoint to handle user profile updates. The endpoint receives a JSON payload containing potentially partial updates to fields like `first_name`, `last_name`, `email`, and `profile_picture`. Describe your approach to implementing this endpoint, addressing the following:",
+    "*   How would you validate the incoming data, ensuring data integrity and security? Discuss the trade-offs between different validation methods (e.g., Django's forms vs. serializers, custom validation).",
+    "*   How would you handle potential concurrency issues if multiple users try to update the same profile simultaneously?",
+    "*   How would you efficiently update the user profile model with only the fields that were actually provided in the payload?  Discuss methods to avoid unnecessary database writes."
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T16:19:53.592406"
+}

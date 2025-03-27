@@ -1,0 +1,25 @@
+{
+  "id": "lP_ydx0EtUQnHXw7kAF_0Q",
+  "full_name": "koshal",
+  "email": "0d17bdcd277209503608f546ce4648c4c27664406f1d0cc17a25d0679506314e",
+  "phone": "137b42c3037fc798a5072dfa8af82f1c1cb657ef84e98ade7fbabc8793930943",
+  "years_experience": 0,
+  "desired_positions": "java",
+  "current_location": "noida",
+  "tech_stack": "java, node.js, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions for a candidate proficient in Java, Node.js, PostgreSQL, and Docker, designed to assess practical understanding and problem-solving skills:",
+    "1.  **Database Interaction & Efficiency:** You're tasked with building a feature in a Node.js application that aggregates and displays data from a PostgreSQL database. This data involves joining multiple tables and performing calculations on the results. Describe your approach to ensure the query is performant and scalable, considering potential data growth. Discuss the tools and techniques you would use for profiling and optimizing the query. How would you monitor query performance in a production environment?",
+    "2.  **Microservices & Docker Orchestration:** Imagine you're deploying a Java-based microservice application using Docker. The application interacts with a PostgreSQL database (also containerized). You need to ensure that the database container is always available before the Java microservice starts. Describe your strategy for handling container dependencies and ensuring service availability during deployment and restarts, covering container orchestration aspects. Which tool would you use for orchestration (e.g., Docker Compose, Kubernetes) and why? What are the benefits and trade-offs of your chosen approach?",
+    "3.  **Asynchronous Operations & Error Handling:** In a Node.js application, you need to implement a system that processes a large number of messages from a message queue (e.g., RabbitMQ or Kafka). Each message triggers a series of asynchronous operations, including calls to external APIs and updates to a PostgreSQL database. Describe your approach to handling potential errors and ensuring data consistency in this asynchronous environment. How would you ensure that no messages are lost or processed multiple times? What strategies would you implement for retries, dead-letter queues, and monitoring the health of the message processing system?",
+    "4.  **Java Performance Tuning:** You've noticed that a Java-based API endpoint is experiencing slow response times under heavy load. Describe your systematic approach to identifying and resolving performance bottlenecks in the Java application.  Specifically, what tools would you use to profile the application? What are some common performance issues you would investigate (e.g., memory leaks, inefficient algorithms, thread contention)? How would you approach tuning the JVM for optimal performance in a containerized environment?"
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T12:16:18.114411"
+}

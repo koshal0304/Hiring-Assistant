@@ -1,0 +1,25 @@
+{
+  "id": "JMt6GnADxT4MP_lCIEGZGg",
+  "full_name": "skill",
+  "email": "36a49bb428b34a46a503b8ba2af5b7ab35036f18e587dadbe1b03403056a00a9",
+  "phone": "cd99538130507c033f415b450aa77ece918003687ac42bfeb613d30d7a58151f",
+  "years_experience": 0,
+  "desired_positions": "python",
+  "current_location": "sdgf",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions for a candidate with the specified tech stack, designed to test practical understanding and problem-solving abilities:",
+    "1.  **Python/Django/PostgreSQL: You're experiencing slow query performance in a Django application interacting with PostgreSQL, specifically when filtering a large table. Describe your process for identifying and addressing the bottleneck. Be specific about the tools you'd use, potential solutions you'd investigate (including code examples if applicable), and the rationale behind your choices.**  (This question tests knowledge of query optimization, database indexing, Django ORM performance, and profiling tools.)",
+    "2.  **React: Imagine you are building a complex form in React that relies on dynamically fetched data from an API. This form requires multiple steps and validation at each step.  Describe your approach to managing the form state, handling asynchronous data loading, and implementing validation, considering potential performance implications as the form grows more complex. Consider using hooks and explain your choices.** (This tests React state management knowledge, asynchronous handling, form validation strategies, and performance awareness.)",
+    "3.  **Docker: Describe a scenario where your Django/React application running in Docker encounters intermittent connectivity issues to the PostgreSQL database container. Detail the steps you would take to troubleshoot the issue, including the Docker commands you might use, the areas you'd investigate (e.g., networking, DNS resolution), and potential solutions.** (This assesses understanding of Docker networking, container interaction, troubleshooting methodologies, and service dependencies.)",
+    "4.  **Python/Django/React: You need to implement real-time updates to a specific component in your React frontend based on changes happening in the Django backend. Describe how you would architect this feature using your preferred technologies within the specified stack.  Consider options like WebSockets or Server-Sent Events (SSE), explain the tradeoffs involved in choosing one over the other, and provide a high-level overview of the implementation on both the frontend and backend.** (This tests knowledge of real-time communication strategies, backend integration, and architectural considerations.)"
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T12:31:38.737551"
+}

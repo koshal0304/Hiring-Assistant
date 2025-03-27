@@ -1,0 +1,25 @@
+{
+  "id": "yr4MWydY06oepKgLD8vP8g",
+  "full_name": "sfaa",
+  "email": "2a308378bc69963faaa90001a498b308e7c9065ce8a3332c6ed1d58a9e432c97",
+  "phone": "472d282d92e8252d48a0af6ba7c74561955be253b6fcdeb5326e95d324e1ace9",
+  "years_experience": 0,
+  "desired_positions": "python",
+  "current_location": "noida",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions tailored for a candidate with expertise in Python, Django, React, PostgreSQL, and Docker, focusing on practical understanding and problem-solving:",
+    "1.  **You have a Django application serving a large number of requests.  You notice that database queries are becoming a bottleneck. Describe three distinct strategies you could implement to improve database performance. For each strategy, explain the trade-offs (pros and cons) and under what circumstances you would choose that specific approach over the others. Assume that the queries themselves are well-optimized.**",
+    "*   *This question aims to assess the candidate's understanding of Django ORM optimization, caching strategies, database indexing, connection pooling, and potential for read replicas/sharding. The \"trade-offs\" aspect encourages nuanced thinking.*",
+    "2.  **You're building a feature in your React application that involves displaying a dynamically updating list of data fetched from a Django REST API. The list needs to be filterable and sortable client-side, and the data is frequently changing on the server. Describe your approach to managing the state of this list (both in terms of data and UI state like sorting/filtering) and efficiently updating the UI when new data arrives. How would you handle pagination? Consider performance and user experience.**",
+    "*   *This tests the candidate's understanding of React state management (Redux, Context API, useState/useReducer), API integration with React, performance optimization with memoization or virtualization, and handling asynchronous updates. Pagination strategy demonstrates understanding of common UI patterns.*"
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T16:25:12.530069"
+}

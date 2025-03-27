@@ -1,0 +1,25 @@
+{
+  "id": "WpCzSw-VH-bzcxXQJO3Dzw",
+  "full_name": "koshal kumar",
+  "email": "940a395bc846cbd442573f194aaa14ad207bf03aa625468d413957e39c4669aa",
+  "phone": "6ee561ed0ade1c3ad0f1f256666ae8a12d746b2893455ae27ce9fcbf4bf94f02",
+  "years_experience": 3,
+  "desired_positions": "python",
+  "current_location": "noida",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions for a candidate familiar with Python, Django, React, PostgreSQL, and Docker, designed to test practical understanding and problem-solving abilities:",
+    "1.  **Scenario:** You're building a Django API endpoint that needs to efficiently retrieve and filter a large dataset (millions of rows) from a PostgreSQL database. The data includes fields for date, user ID, and a JSONB field containing complex data. Clients need to filter the data based on date ranges, specific user IDs, and values within the JSONB field (e.g., filtering for objects where `JSONBfield->>'status' = 'active'`).",
+    "*   **Question:** Describe your approach to optimizing this query, considering potential performance bottlenecks. Discuss specific techniques you would employ at each layer (Django ORM, PostgreSQL), including indexing strategies and considerations for large datasets. What are the trade-offs involved in each technique?",
+    "2.  **Scenario:** You have a React component that fetches data from your Django API. You are encountering a situation where the component re-renders unnecessarily, even when the data being passed to it as props hasn't changed. This leads to performance issues, especially for complex components.",
+    "*   **Question:**  Explain the common causes of unnecessary re-renders in React. Describe the techniques you would use to identify the cause of the re-renders in this specific situation, and then detail at least two distinct strategies you could implement to prevent these unnecessary re-renders. For each strategy, outline its pros and cons."
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T15:21:53.820070"
+}

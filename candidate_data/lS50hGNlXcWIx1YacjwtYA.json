@@ -1,0 +1,25 @@
+{
+  "id": "lS50hGNlXcWIx1YacjwtYA",
+  "full_name": "wdvwa",
+  "email": "747d6a3b326fae02588ef0ef17285e9de8c0eb9bffb3671c148d973801b42e46",
+  "phone": "334fea0904c224ea490179f754a0833985411e833984aafabb3275808da470d2",
+  "years_experience": 34,
+  "desired_positions": "sdvv",
+  "current_location": "vefv",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions designed to assess a candidate with Python, Django, React, PostgreSQL, and Docker skills, focusing on practical understanding and problem-solving:",
+    "1.  **Django & PostgreSQL:** You are designing an e-commerce platform with Django and PostgreSQL. You need to implement a feature to display \"related products\" on a product detail page. Related products are defined as products that share at least 3 common categories with the current product. How would you structure your Django models (specifically focusing on the Product and Category models) and write the Django ORM query to efficiently retrieve the related products for a given product? Discuss potential performance considerations and optimizations for a large dataset.",
+    "2.  **React & State Management:** Describe a situation where you would choose to use React Context API for state management over a more complex state management library like Redux or Zustand. What are the trade-offs involved, and how would you structure your Context provider and consumer components to ensure maintainability and testability of your React application? Provide a brief code snippet illustrating how you might define a simple Context and use it in a functional component.",
+    "3.  **Docker & Deployment:** You have a Django application that utilizes a PostgreSQL database and a React front-end, all running in separate Docker containers orchestrated with Docker Compose. Explain your approach to handling database migrations in a production environment during a new release. How would you ensure zero downtime for the application while applying the migrations? Consider network connectivity, data consistency, and rollback strategies in your explanation.",
+    "4.  **Python & Django Performance:** You've identified a slow-running Django view that retrieves and processes a large dataset from the database.  Using Python profiling tools (e.g., `cProfile`), you've pinpointed the bottleneck as being within a loop that iterates through the queryset. What are three different strategies you could employ to improve the performance of this view, focusing on efficiency within the Python/Django code itself (e.g., avoiding unnecessary database hits, optimizing data structures, efficient algorithms)? Explain the trade-offs of each approach."
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T16:46:31.733976"
+}

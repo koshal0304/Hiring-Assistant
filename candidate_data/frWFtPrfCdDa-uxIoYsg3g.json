@@ -1,0 +1,23 @@
+{
+  "id": "frWFtPrfCdDa-uxIoYsg3g",
+  "full_name": "wfdaw",
+  "email": "253f21f4111b5718fdb90f5437ef45ce94f17845762bf10d874bb08180d8880e",
+  "phone": "eea79ac2bc18e52b04c23d2bcb3a95012386b7e5e5c97683951b3cfd66550115",
+  "years_experience": 2,
+  "desired_positions": "pyhton",
+  "current_location": "asvd",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 3 technical questions designed for a candidate familiar with Python, Django, React, PostgreSQL, and Docker:",
+    "1.  **Django & PostgreSQL Data Integrity:** You have a Django application that manages user profiles.  Each profile includes a `username` field that *must* be unique.  Describe the different approaches you would take to ensure uniqueness at the database level, considering both Django's ORM and direct PostgreSQL constraints. What are the pros and cons of each approach, and in what scenarios would you choose one over the other? Consider scenarios including race conditions on high-traffic sites.",
+    "2.  **React Component Optimization:** You're building a complex React component that renders a large table with frequently updating data fetched from an API. You notice performance issues when the data updates. Describe several techniques you would use to optimize the component's rendering performance, specifically addressing unnecessary re-renders.  Explain the trade-offs of each approach. Be sure to include techniques relating to state management, `React.memo`, and virtualized lists.",
+    "3.  **Docker Networking and Orchestration:**  You need to deploy your Django application, a PostgreSQL database, and a React-based frontend using Docker. Describe your Docker Compose configuration, focusing on how you would handle inter-container communication (networking).  How would you ensure that the Django application can reliably connect to the PostgreSQL database, especially during initial container startup when the database might not be fully initialized? What considerations would you make for deploying this to a cloud environment using an orchestrator like Kubernetes?"
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T16:45:23.284059"
+}

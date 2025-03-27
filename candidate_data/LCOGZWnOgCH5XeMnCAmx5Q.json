@@ -1,0 +1,25 @@
+{
+  "id": "LCOGZWnOgCH5XeMnCAmx5Q",
+  "full_name": "asdvadsv",
+  "email": "5844d705401e79a10a41112b5d66eee00638b03bdd997a2023a4fe51056e53fc",
+  "phone": "44598e59b29933ba8e16f69bb4163ecff318f540aa9149d513c6852dc7e464ea",
+  "years_experience": 2,
+  "desired_positions": "sdfa",
+  "current_location": "dawsfa",
+  "tech_stack": "python, django, react, postgresql, docker",
+  "technical_questions": [
+    "Here are 5 technical questions for a candidate with a Python, Django, React, PostgreSQL, and Docker tech stack, designed to test practical understanding and problem-solving skills:",
+    "1.  **Django & PostgreSQL:** Imagine you're building an e-commerce platform with a large product catalog (millions of entries).  You need to implement a feature to allow users to search for products based on various criteria (name, category, price range, etc.). Describe your approach to optimize the search performance, specifically focusing on database interactions (e.g., indexing, query optimization). What tradeoffs would you consider when choosing between different optimization strategies? Also, how would you monitor the query performance and identify potential bottlenecks in the future?",
+    "2.  **React & State Management:** You're building a complex React component that manages a large amount of user input data across multiple nested components. Describe your preferred approach to managing the state of this component. Explain the pros and cons of different state management solutions (e.g., `useState`, `useReducer`, Context API, Redux, Zustand) in this scenario. How would you handle potential performance issues related to re-renders caused by state updates?",
+    "3.  **Docker & Deployment:** You have a Django application with a React frontend that you want to deploy using Docker. Outline the steps involved in creating a production-ready Dockerfile for both the Django backend and React frontend.  Focus on aspects like multi-stage builds, minimizing image size, handling environment variables, and ensuring proper security practices. How would you orchestrate these containers in a production environment (e.g., using Docker Compose or Kubernetes)?",
+    "4.  **Python & Asynchronous Tasks:**  Your Django application needs to process a large number of long-running tasks (e.g., image processing, sending emails). Explain how you would implement asynchronous task processing in your Django application. Discuss different technologies you could use for task queuing (e.g., Celery, Redis Queue). What considerations would you have regarding task monitoring, error handling, and scaling the task processing infrastructure?"
+  ],
+  "technical_answers": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T16:51:51.377978"
+}

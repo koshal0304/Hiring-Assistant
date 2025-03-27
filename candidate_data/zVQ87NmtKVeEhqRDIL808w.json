@@ -1,0 +1,23 @@
+{
+  "id": "zVQ87NmtKVeEhqRDIL808w",
+  "full_name": "skill",
+  "email": "0d17bdcd277209503608f546ce4648c4c27664406f1d0cc17a25d0679506314e",
+  "phone": "0fc91c9bcb8fb5e45032b8a845df5493d976af64c06e8e5ba05bef43d729d4e7",
+  "years_experience": 0,
+  "desired_positions": "python",
+  "current_location": "wondrous",
+  "tech_stack": "ok",
+  "technical_questions": [
+    "Okay, here are 3 technical questions designed to assess a candidate's practical understanding, problem-solving abilities, and depth of knowledge in the context of the \"ok\" tech stack (assuming \"ok\" refers to **okta**):",
+    "1.  **Scenario: Users are reporting inconsistent login experiences across different applications integrated with Okta. Some users are prompted for MFA every time, while others are not, even when accessing the same application under identical network conditions. How would you approach troubleshooting this issue? Describe the steps you'd take to identify the root cause, and what Okta configurations you would examine.** (This question assesses understanding of Okta policies, MFA settings, session management, and troubleshooting methodologies. It requires the candidate to demonstrate practical skills in diagnosing and resolving common Okta issues.)",
+    "2.  **Imagine you need to implement a new custom authorization flow in Okta where access to a specific resource is granted only if a user belongs to a certain group *and* possesses a specific custom attribute with a particular value.  Explain how you would design and implement this solution using Okta features like Custom Authorization Server, Scopes, Claims, and potentially Okta Workflows.  Include considerations for scalability and maintainability.** (This question evaluates the candidate's comprehension of advanced Okta features, specifically related to authorization.  It tests their ability to design a complex authorization solution and consider important factors like scalability and maintainability.)",
+    "3.  **You are tasked with improving the security posture of an Okta-integrated application using adaptive MFA. Describe how you would leverage Okta's adaptive MFA capabilities (e.g., device trust, location-based policies, risk-based authentication) to enhance security without significantly impacting the user experience.  Provide specific examples of scenarios where adaptive MFA could be beneficial in mitigating risk, and explain how you'd configure these policies within Okta.** (This focuses on security best practices, requires the candidate to demonstrate a strong understanding of adaptive MFA concepts, and tests their ability to apply these concepts to a real-world scenario to improve security while considering user experience.)"
+  ],
+  "technical_answers": [
+    "ok",
+    "wdf",
+    "adfs",
+    "ok"
+  ],
+  "timestamp": "2025-03-27T12:40:08.428930"
+}
