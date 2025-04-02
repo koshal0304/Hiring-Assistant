@@ -4,6 +4,9 @@
 
 TalentScout is an intelligent AI-powered hiring assistant designed to streamline the initial candidate screening process. Leveraging Google's Gemini AI, the application provides an automated, privacy-focused approach to collecting candidate information and conducting technical assessments.
 
+<img width="1430" alt="Screenshot 2025-04-02 at 5 02 16 PM" src="https://github.com/user-attachments/assets/50326bf7-968f-4ebd-9037-816cce167345" />
+
+
 ## Key Capabilities
 
 - Automated candidate information collection
