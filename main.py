@@ -412,51 +412,86 @@ def load_lottie_url(url):
 
 def apply_custom_css():
     """
-    Apply advanced custom CSS styling to the Streamlit app with animations
+    Apply premium styling to the TalentScout AI Hiring Assistant
     """
     st.markdown("""
     <style>
-    /* Modern Gradient Background with subtle animation */
+    /* Luxury Gradient Background with animated flow */
     .stApp {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        font-family: 'Roboto', 'Inter', sans-serif;
-        animation: gradientShift 15s ease infinite;
-        background-size: 400% 400%;
+        background: linear-gradient(135deg, #f0f4f8 0%, #d0e1f9 50%, #e6f0ff 100%);
+        font-family: 'Poppins', 'Inter', sans-serif;
+        animation: gradientFlow 20s ease infinite;
+        background-size: 300% 300%;
     }
     
-    @keyframes gradientShift {
+    @keyframes gradientFlow {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
     }
     
-    /* Elegant Header Styling with animation */
+    /* Premium Title with 3D effect and floating animation */
     .main-title {
         color: #1a2980;
         font-weight: 800;
         text-align: center;
         margin-bottom: 30px;
-        font-size: 2.5em;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        background: linear-gradient(to right, #1a2980, #26d0ce, #1a2980);
+        font-size: 2.8em;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to right, #1a2980, #26d0ce, #4776E6);
         background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: shine 3s linear infinite;
+        animation: floating 3s ease-in-out infinite, shine 4s linear infinite;
+        letter-spacing: 1px;
+    }
+    
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
     }
     
     @keyframes shine {
         to { background-position: 200% center; }
     }
     
-    /* Sleek Chat Input Styling with focus animation */
+    /* Elegant subtitle styling */
+    .subtitle {
+        text-align: center;
+        color: #4A5568;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        animation: fadeIn 1s ease-out;
+        font-weight: 400;
+    }
+    
+    /* Futuristic Chat Container */
+    .chat-container {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        animation: containerAppear 0.6s ease-out;
+        margin-bottom: 20px;
+    }
+    
+    @keyframes containerAppear {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Premium Chat Input Styling with glow effect */
     .stTextInput > div > div > input {
         background-color: white;
         border: 2px solid transparent;
-        border-radius: 12px;
-        padding: 12px 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 14px 18px;
+        box-shadow: 0 4px 12px rgba(26, 41, 128, 0.1);
         transition: all 0.3s ease;
+        font-size: 16px;
         background-image: linear-gradient(white, white),
                            linear-gradient(to right, #1a2980, #26d0ce);
         background-origin: border-box;
@@ -465,46 +500,53 @@ def apply_custom_css():
     
     .stTextInput > div > div > input:focus {
         outline: none;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        border-image: linear-gradient(to right, #1a2980, #26d0ce) 1;
-        animation: pulseBorder 2s infinite;
+        box-shadow: 0 0 15px rgba(38, 208, 206, 0.4);
+        transform: translateY(-2px);
+        animation: glow 2s infinite;
     }
     
-    @keyframes pulseBorder {
-        0% { box-shadow: 0 0 0 0 rgba(26, 41, 128, 0.4); }
-        70% { box-shadow: 0 0 0 10px rgba(26, 41, 128, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(26, 41, 128, 0); }
+    @keyframes glow {
+        0% { box-shadow: 0 0 5px rgba(26, 41, 128, 0.3); }
+        50% { box-shadow: 0 0 20px rgba(38, 208, 206, 0.5); }
+        100% { box-shadow: 0 0 5px rgba(26, 41, 128, 0.3); }
     }
     
-    /* Enhanced Sidebar Styling with fade-in effect */
-    .css-1aumxhk {
-        background-color: rgba(255, 255, 255, 0.9);
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 0 15px 15px 0;
+    /* Sleek Sidebar Design */
+    .css-1aumxhk, [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(240,248,255,0.9) 100%);
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 0 20px 20px 0;
         backdrop-filter: blur(10px);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        animation: fadeIn 0.8s ease-out;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.03);
+        animation: slideInSidebar 0.8s ease-out;
     }
     
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateX(-20px); }
+    @keyframes slideInSidebar {
+        from { opacity: 0; transform: translateX(-30px); }
         to { opacity: 1; transform: translateX(0); }
     }
     
-    /* Modern Button Design with hover animation */
+    /* Premium Button Design with pulse effect */
     .stButton > button {
-        background: linear-gradient(to right, #1a2980, #26d0ce);
+        background: linear-gradient(45deg, #1a2980, #26d0ce);
         color: white;
         border: none;
-        border-radius: 10px;
-        padding: 12px 25px;
+        border-radius: 12px;
+        padding: 12px 30px;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        letter-spacing: 1px;
+        transition: all 0.4s ease;
+        box-shadow: 0 4px 15px rgba(26, 41, 128, 0.2);
         position: relative;
         overflow: hidden;
+        animation: pulseButton 2s infinite;
+    }
+    
+    @keyframes pulseButton {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+        100% { transform: scale(1); }
     }
     
     .stButton > button:before {
@@ -514,68 +556,198 @@ def apply_custom_css():
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-        transition: 0.5s;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        transition: 0.6s;
     }
     
     .stButton > button:hover {
         transform: translateY(-3px);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        background: linear-gradient(to right, #26d0ce, #1a2980);
+        box-shadow: 0 8px 20px rgba(26, 41, 128, 0.3);
+        background: linear-gradient(45deg, #26d0ce, #1a2980);
     }
     
     .stButton > button:hover:before {
         left: 100%;
-        animation: shine 1.5s;
     }
     
-    /* Refined Message Styling with entrance animation */
-    .stMarkdown {
-        background-color: white;
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-        border-left: 5px solid #1a2980;
-        transition: all 0.3s ease;
-        animation: slideUp 0.5s ease-out forwards;
+    /* Message Bubbles Design */
+    .chat-message-user {
+        background-color: #E6F7FF;
+        border-radius: 18px 18px 18px 0;
+        padding: 15px 20px;
+        margin: 10px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid #1a2980;
+        max-width: 85%;
+        margin-right: auto;
+        animation: messageIn 0.5s ease-out forwards;
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     
-    @keyframes slideUp {
+    .chat-message-assistant {
+        background: linear-gradient(135deg, #f5fbff, #e6f7ff);
+        border-radius: 18px 18px 0 18px;
+        padding: 15px 20px;
+        margin: 10px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        border-right: 4px solid #26d0ce;
+        max-width: 85%;
+        margin-left: auto;
+        animation: messageIn 0.5s ease-out forwards;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    
+    @keyframes messageIn {
         to { opacity: 1; transform: translateY(0); }
     }
     
-    .stMarkdown:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Assistant and User Icons */
+    .avatar-user {
+        background-color: #1a2980;
+        color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        font-weight: bold;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
     
-    /* Loading animation */
+    .avatar-assistant {
+        background: linear-gradient(45deg, #1a2980, #26d0ce);
+        color: white;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Loading Animation Style */
     .stProgress > div > div > div > div {
-        background-image: linear-gradient(to right, #1a2980, #26d0ce, #1a2980);
+        background: linear-gradient(45deg, #1a2980, #26d0ce, #4776E6);
         background-size: 200% auto;
-        animation: loading 2s linear infinite;
+        animation: gradientLoading 2s linear infinite;
+        border-radius: 100px;
     }
     
-    @keyframes loading {
+    @keyframes gradientLoading {
         0% { background-position: 0% center; }
         100% { background-position: 200% center; }
     }
     
-    /* Card elements with hover effects */
-    .element-container {
+    /* Advanced Card Styling */
+    .info-card {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin: 15px 0;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        transition: all 0.4s ease;
+    }
+    
+    .info-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(26, 41, 128, 0.1);
+    }
+    
+    /* Card Title */
+    .card-title {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #1a2980;
+        border-bottom: 2px solid rgba(38, 208, 206, 0.3);
+        padding-bottom: 8px;
+    }
+    
+    /* Animated List Items */
+    .animated-list li {
+        margin-bottom: 10px;
+        padding: 8px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.5);
         transition: all 0.3s ease;
+        animation: listItemIn 0.4s ease-out forwards;
+        opacity: 0;
+        transform: translateX(-10px);
     }
     
-    .element-container:hover {
-        transform: translateY(-5px);
+    .animated-list li:hover {
+        background: rgba(38, 208, 206, 0.1);
+        transform: translateX(5px);
     }
     
-    /* Responsive Typography */
-    @media (max-width: 600px) {
+    @keyframes listItemIn {
+        to { opacity: 1; transform: translateX(0); }
+    }
+    
+    /* Status Indicators */
+    .status-indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 8px;
+        animation: pulse 1.5s infinite;
+    }
+    
+    .status-online {
+        background-color: #10B981;
+    }
+    
+    .status-processing {
+        background-color: #F59E0B;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.2); opacity: 0.7; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    
+    /* Toast Notifications */
+    .toast-notification {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: white;
+        color: #1a2980;
+        padding: 15px 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        animation: toastIn 0.5s ease, toastOut 0.5s ease 4.5s forwards;
+    }
+    
+    @keyframes toastIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    
+    @keyframes toastOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+    }
+    
+    /* Responsive Design Adjustments */
+    @media (max-width: 768px) {
         .main-title {
             font-size: 2em;
+        }
+        
+        .chat-message-user, .chat-message-assistant {
+            max-width: 95%;
         }
     }
     </style>
@@ -591,36 +763,131 @@ def main():
     # Apply custom CSS
     apply_custom_css()
     
-    # Load Lottie animation
-    lottie_coding = load_lottie_url("https://lottie.host/1234-5678-9012-3456/ai-robot-animation.json")
+    # Initialize chatbot in session state if it doesn't exist
+    if 'chatbot' not in st.session_state:
+        try:
+            st.session_state.chatbot = TalentScoutChatbot()
+        except Exception as e:
+            st.error(f"Error initializing chatbot: {e}")
+            st.error("Please check your API key and try again.")
+            return
     
-    # Create columns for title and animation
-    col1, col2 = st.columns([3, 1])
+    # Load Lottie animations
+    lottie_urls = {
+        "robot": "https://assets4.lottiefiles.com/packages/lf20_xafe7whz.json",
+        "hiring": "https://assets9.lottiefiles.com/packages/lf20_vwcugezu.json",
+        "success": "https://assets10.lottiefiles.com/packages/lf20_ydo1amjm.json"
+    }
+    
+    # Load animations
+    lottie_robot = load_lottie_url(lottie_urls["robot"])
+    lottie_hiring = load_lottie_url(lottie_urls["hiring"])
+    
+    # Create modern header with animations
+    col1, col2, col3 = st.columns([1, 2, 1])
     
     with col1:
-        st.markdown("<h1 class='main-title'>TalentScout AI Hiring Assistant</h1>", unsafe_allow_html=True)
+        if lottie_robot:
+            st_lottie(lottie_robot, height=150, key="robot")
     
     with col2:
-        if lottie_coding:
-            st_lottie(lottie_coding, height=100, key="coding")
+        st.markdown("<h1 class='main-title'>TalentScout AI</h1>", unsafe_allow_html=True)
+        st.markdown("<p class='subtitle'>Intelligent Hiring Assistant for Modern Recruitment</p>", unsafe_allow_html=True)
     
-    # Main Chat Interface
-    try:
-        # Create chatbot with the provided API key
-        if 'chatbot' not in st.session_state:
-            st.session_state.chatbot = TalentScoutChatbot()
+    with col3:
+        if lottie_hiring:
+            st_lottie(lottie_hiring, height=150, key="hiring")
+    
+    # Create a container for the chat interface
+    chat_container = st.container()
+    st.markdown("<div class='chat-container'></div>", unsafe_allow_html=True)
+    
+    with chat_container:
+        # Information cards section
+        st.markdown("### How it works")
+        
+        info_cols = st.columns(3)
+        
+        with info_cols[0]:
+            st.markdown("""
+            <div class='info-card'>
+                <div class='card-title'>👋 Introduction</div>
+                <p>Our AI assistant guides you through the initial screening process with natural conversation.</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
+        with info_cols[1]:
+            st.markdown("""
+            <div class='info-card'>
+                <div class='card-title'>📋 Assessment</div>
+                <p>Tailored technical questions assess your skills based on your specific tech stack.</p>
+            </div>
+            """, unsafe_allow_html=True)
+            
+        with info_cols[2]:
+            st.markdown("""
+            <div class='info-card'>
+                <div class='card-title'>🔒 Privacy</div>
+                <p>Advanced data privacy measures ensure your information remains secure and protected.</p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        # Status indicator
+        st.markdown("""
+        <div style="text-align: center; margin: 20px 0;">
+            <span class="status-indicator status-online"></span> AI Assistant Online
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Initialize messages in session state if they don't exist
+        if 'messages' not in st.session_state:
+            st.session_state.messages = []
+            
+            # Add initial welcome message from assistant
+            initial_message = st.session_state.chatbot.process_user_input("")
+            st.session_state.messages.append({"role": "assistant", "content": initial_message})
+        
+        # Display chat messages
+        for message in st.session_state.messages:
+            if message["role"] == "user":
+                st.markdown(f"""
+                <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                    <div class="avatar-user">U</div>
+                    <div class="chat-message-user">{message["content"]}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                    <div class="avatar-assistant">AI</div>
+                    <div class="chat-message-assistant">{message["content"]}</div>
+                </div>
+                """, unsafe_allow_html=True)
         
         # Chat input with improved styling
         if prompt := st.chat_input("💬 Type your response here..."):
-            response = st.session_state.chatbot.process_user_input(prompt)
+            # Add user message to chat history
+            st.session_state.messages.append({"role": "user", "content": prompt})
             
-            # Enhanced message display
-            with st.chat_message("assistant"):
-                st.markdown(response)
-    
-    except Exception as e:
-        st.error(f"🚨 An error occurred: {e}")
-        st.error("Please check your configuration and try again.")
-
+            try:
+                # Process user input
+                response = st.session_state.chatbot.process_user_input(prompt)
+                
+                # Add assistant response to chat history
+                st.session_state.messages.append({"role": "assistant", "content": response})
+                
+                # Force a rerun to update the chat display
+                st.rerun()
+                
+            except Exception as e:
+                st.error(f"🚨 An error occurred: {e}")
+                st.error("Please check your configuration and try again.")
+        
+        # Animated footer
+        st.markdown("""
+        <div style="text-align: center; margin-top: 40px; opacity: 0.7; animation: fadeIn 1s ease-out;">
+            <p>Powered by advanced AI technology • <span style="color: #1a2980;">TalentScout</span> © 2025</p>
+        </div>
+        """, unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
