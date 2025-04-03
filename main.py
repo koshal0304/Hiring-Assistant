@@ -231,7 +231,7 @@ class TalentScoutChatbot:
             questions = response.text.split('\n')
             questions = [q.strip() for q in questions if q.strip() and any(char.isalpha() for char in q)]
             
-            return questions[:5] or [
+            return questions[:6] or [
                 f"Describe a challenging project you've worked on with {tech_stack}.",
                 f"What are the key considerations when using {tech_stack}?",
                 "How do you approach learning new technologies?",
@@ -412,17 +412,25 @@ def load_lottie_url(url):
 
 def apply_custom_css():
     """
-    Apply advanced custom CSS styling to the Streamlit app
+    Apply advanced custom CSS styling to the Streamlit app with animations
     """
     st.markdown("""
     <style>
-    /* Modern Gradient Background */
+    /* Modern Gradient Background with subtle animation */
     .stApp {
         background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         font-family: 'Roboto', 'Inter', sans-serif;
+        animation: gradientShift 15s ease infinite;
+        background-size: 400% 400%;
     }
     
-    /* Elegant Header Styling */
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    /* Elegant Header Styling with animation */
     .main-title {
         color: #1a2980;
         font-weight: 800;
@@ -430,12 +438,18 @@ def apply_custom_css():
         margin-bottom: 30px;
         font-size: 2.5em;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        background: linear-gradient(to right, #1a2980, #26d0ce);
+        background: linear-gradient(to right, #1a2980, #26d0ce, #1a2980);
+        background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: shine 3s linear infinite;
     }
     
-    /* Sleek Chat Input Styling */
+    @keyframes shine {
+        to { background-position: 200% center; }
+    }
+    
+    /* Sleek Chat Input Styling with focus animation */
     .stTextInput > div > div > input {
         background-color: white;
         border: 2px solid transparent;
@@ -443,8 +457,8 @@ def apply_custom_css():
         padding: 12px 15px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
-        background-image: linear-gradient(white, white), 
-                          linear-gradient(to right, #1a2980, #26d0ce);
+        background-image: linear-gradient(white, white),
+                           linear-gradient(to right, #1a2980, #26d0ce);
         background-origin: border-box;
         background-clip: padding-box, border-box;
     }
@@ -453,18 +467,31 @@ def apply_custom_css():
         outline: none;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         border-image: linear-gradient(to right, #1a2980, #26d0ce) 1;
+        animation: pulseBorder 2s infinite;
     }
     
-    /* Enhanced Sidebar Styling */
+    @keyframes pulseBorder {
+        0% { box-shadow: 0 0 0 0 rgba(26, 41, 128, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(26, 41, 128, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(26, 41, 128, 0); }
+    }
+    
+    /* Enhanced Sidebar Styling with fade-in effect */
     .css-1aumxhk {
         background-color: rgba(255, 255, 255, 0.9);
         border-right: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 0 15px 15px 0;
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        animation: fadeIn 0.8s ease-out;
     }
     
-    /* Modern Button Design */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateX(-20px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    
+    /* Modern Button Design with hover animation */
     .stButton > button {
         background: linear-gradient(to right, #1a2980, #26d0ce);
         color: white;
@@ -476,6 +503,19 @@ def apply_custom_css():
         letter-spacing: 0.5px;
         transition: all 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .stButton > button:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: 0.5s;
     }
     
     .stButton > button:hover {
@@ -484,7 +524,12 @@ def apply_custom_css():
         background: linear-gradient(to right, #26d0ce, #1a2980);
     }
     
-    /* Refined Message Styling */
+    .stButton > button:hover:before {
+        left: 100%;
+        animation: shine 1.5s;
+    }
+    
+    /* Refined Message Styling with entrance animation */
     .stMarkdown {
         background-color: white;
         border-radius: 15px;
@@ -492,11 +537,39 @@ def apply_custom_css():
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
         border-left: 5px solid #1a2980;
         transition: all 0.3s ease;
+        animation: slideUp 0.5s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    
+    @keyframes slideUp {
+        to { opacity: 1; transform: translateY(0); }
     }
     
     .stMarkdown:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Loading animation */
+    .stProgress > div > div > div > div {
+        background-image: linear-gradient(to right, #1a2980, #26d0ce, #1a2980);
+        background-size: 200% auto;
+        animation: loading 2s linear infinite;
+    }
+    
+    @keyframes loading {
+        0% { background-position: 0% center; }
+        100% { background-position: 200% center; }
+    }
+    
+    /* Card elements with hover effects */
+    .element-container {
+        transition: all 0.3s ease;
+    }
+    
+    .element-container:hover {
+        transform: translateY(-5px);
     }
     
     /* Responsive Typography */
